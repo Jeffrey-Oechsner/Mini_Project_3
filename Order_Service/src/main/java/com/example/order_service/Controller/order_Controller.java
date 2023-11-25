@@ -18,7 +18,7 @@ public class order_Controller {
 
     @PostMapping(value = "/createorder")
     public void createorder(@Valid @RequestBody order_DTO order){
-        service.create();
+        service.create(order);
     }
 
 }
