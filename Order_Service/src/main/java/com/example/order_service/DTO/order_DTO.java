@@ -1,4 +1,4 @@
-package DTO;
+package com.example.order_service.DTO;
 
 import jakarta.validation.constraints.NotNull;
 
@@ -7,6 +7,10 @@ import java.util.List;
 public class order_DTO {
     @NotNull
     List<product_DTO> products;
+
+    public order_DTO(){
+
+    }
 
     public order_DTO(List<product_DTO> products) {
         this.products = products;

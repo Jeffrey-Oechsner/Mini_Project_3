@@ -1,4 +1,4 @@
-package DTO;
+package com.example.order_service.DTO;
 
 import jakarta.validation.constraints.NotNull;
 
@@ -8,7 +8,9 @@ public class product_DTO {
     @NotNull
     private long quantity;
 
+    public product_DTO(){
 
+    }
     public product_DTO(long product_id, long quantity) {
         this.product_id = product_id;
         this.quantity = quantity;
